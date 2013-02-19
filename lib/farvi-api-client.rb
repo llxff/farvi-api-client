@@ -7,6 +7,7 @@ require 'farvi-api-client/delivery_methods'
 require 'farvi-api-client/orders'
 require 'farvi-api-client/payment_types'
 require 'farvi-api-client/products'
+require 'farvi-api-client/settings'
 
 module Farvi
   module API
@@ -18,6 +19,7 @@ module Farvi
       include Farvi::API::Client::Orders
       include Farvi::API::Client::Products
       include Farvi::API::Client::PaymentTypes
+      include Farvi::API::Client::Settings
 
       attr_accessor :api_endpoint, :api_token, :per_page
       def initialize(api_endpoint, api_token, options={})

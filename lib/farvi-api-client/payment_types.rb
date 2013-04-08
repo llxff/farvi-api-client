@@ -19,7 +19,7 @@ module Farvi
         end
 
         def update_payment_type(payment_type_id, options={})
-          post("payment_types/#{payment_type_id}", options)
+          put("payment_types/#{payment_type_id}", options)
         end
 
         def delete_payment_type(payment_type_id, options={})

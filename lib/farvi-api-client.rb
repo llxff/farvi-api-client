@@ -19,7 +19,7 @@ module Farvi
       include Farvi::API::Client::Orders
       include Farvi::API::Client::Products
       include Farvi::API::Client::PaymentTypes
-      include Farvi::API::Client::Currency
+      include Farvi::API::Client::Currencies
       include Farvi::API::Client::Settings
 
       attr_accessor :api_endpoint, :api_token, :per_page

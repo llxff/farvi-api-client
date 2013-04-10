@@ -7,7 +7,9 @@ require 'farvi-api-client/delivery_methods'
 require 'farvi-api-client/orders'
 require 'farvi-api-client/payment_types'
 require 'farvi-api-client/products'
+require 'farvi-api-client/currencies'
 require 'farvi-api-client/settings'
+
 
 module Farvi
   module API

@@ -8,8 +8,8 @@ require 'farvi-api-client/orders'
 require 'farvi-api-client/payment_types'
 require 'farvi-api-client/products'
 require 'farvi-api-client/currencies'
+require 'farvi-api-client/products_sets'
 require 'farvi-api-client/settings'
-
 
 module Farvi
   module API
@@ -20,6 +20,7 @@ module Farvi
       include Farvi::API::Client::DeliveryMethods
       include Farvi::API::Client::Orders
       include Farvi::API::Client::Products
+      include Farvi::API::Client::ProductsSets
       include Farvi::API::Client::PaymentTypes
       include Farvi::API::Client::Currencies
       include Farvi::API::Client::Settings

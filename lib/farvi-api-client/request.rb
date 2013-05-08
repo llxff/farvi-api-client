@@ -17,7 +17,8 @@ module Farvi
               when :delete, :head
                 request.url(path, options)
               when :patch, :post, :put
-                request.url(path, options)
+                request.path = path
+                request.body = MultiJson.dump(options) unless options.empty?
             end
           end
 

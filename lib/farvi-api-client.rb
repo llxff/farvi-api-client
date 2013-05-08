@@ -9,6 +9,7 @@ require 'farvi-api-client/payment_types'
 require 'farvi-api-client/products'
 require 'farvi-api-client/currencies'
 require 'farvi-api-client/products_sets'
+require 'farvi-api-client/email_of_shops'
 require 'farvi-api-client/settings'
 
 module Farvi
@@ -23,6 +24,7 @@ module Farvi
       include Farvi::API::Client::ProductsSets
       include Farvi::API::Client::PaymentTypes
       include Farvi::API::Client::Currencies
+      include Farvi::API::Client::EmailOfShops
       include Farvi::API::Client::Settings
 
       attr_accessor :api_endpoint, :api_token, :per_page

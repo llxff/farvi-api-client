@@ -7,7 +7,7 @@ module Farvi
         end
 
         def deliver_has_not_payment_email(order_number, options={})
-          put("orders/#{order_number}/deliver_has_not_payment_email", options)
+          post("orders/#{order_number}/deliver_has_not_payment_email", options)
         end
       end
     end
